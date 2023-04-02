@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryfont: 'Ubuntu', sans-serif;
+    --secondaryfont: 'Abril Fatface', cursive;
+    --thirdfont: 'Open Sans', sans-serif;
+    --primarycolor: #0f2f44;
+    --yellowcollor: #ffc712;
+}
+/* Common CSS Bismillah */
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+/* Common CSS Alhamdulillah */
+/* Header Part Bismillah  */
+header{
+    background-color: var(--primarycolor);
+    color: #fefefe;
+    padding: 20px 0;
+}
+header .header_left{
+    width: 50%;
+}
+header .header_right{
+    width: 50%;
+    text-align: right;
+}
+/* Header Part Alhamdulillah */
+/* Nav Bar Part Bismillah  */
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+}
+nav .menu ul{
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+}
+nav .menu ul li a{
+    padding: 40px 20px;
+    display: block;
+    font-size: 16px;
+    font-weight: medium;
+    color: #222222;
+    transition: 0.5s;
+}
+nav ul li:hover a{
+    color: var(--yellowcollor);
+    /* transition: 0.5s; */
+}
+nav ul li span{
+    border: 1px solid #777;
+    color: #777;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.search{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+.search input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0 15px;
+}
+.close{
+    opacity: 0;
+    visibility: hidden;
+}
+.search{
+    display: none;
+}
+/* Nav Bar Part Alhamdulillah */
+/* Banner Part Bismillah  */
+#banner{
+    background-image: url(../Images/Banner.jpg);
+    height: 600px;
+    background-position: center;
+}
+.banner_cnt{
+    width: 35%;
+}
+#banner .row{
+    height: 600px;
+}
+#banner .banner_cnt h2{
+    font-size: 50px;
+    font-weight: 300px;
+    color: var(--primarycolor);
+}
+#banner .banner_cnt h1{
+    font-size: 80px;
+    font-weight: 400px;
+    color: var(--secondaryfont);
+    color: var(--primarycolor);
+    line-height: 64px;
+}
+#banner .banner_cnt h3{
+    font-size: 32px;
+    font-weight: 300px;
+    color: #8484bf;
+    letter-spacing: 10px;
+}
+#banner .banner_cnt p{
+    margin: 15px 0;
+    font-family: var(--thirdfont);
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: #444444;
+}
+#banner .banner_cnt .button{
+    border-radius: 5px;
+    background-color: #8484bf;
+    padding: 15px 20px;
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    color: white;
+    margin: 0 15px 0 0;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#banner .banner_cnt .player{
+    background-color: #ffffff;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #8484bf;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+/* Banner Part Alhamdulillah */
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 50px; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+  }
